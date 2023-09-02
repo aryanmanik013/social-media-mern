@@ -1,11 +1,21 @@
-import React from 'react'
+import React from "react";
+import AddPost from "./Posts/AddPost";
+import FeaturedPosts from "./Posts/FeaturedPosts";
 
 const Content = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <AddPost />
+      <FeaturedPosts />
+      <FeaturedPosts />
+      <FeaturedPosts />
+      <FeaturedPosts />
+      <FeaturedPosts />
+      <FeaturedPosts />
+      <FeaturedPosts />
+      <FeaturedPosts />
+    </>
+  );
+};
 
-export default Content
+export default Content;

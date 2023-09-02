@@ -1,181 +1,142 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Left = () => {
   return (
     <>
-      <div class="row flex-nowrap">
-        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-          <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-            <a
-              href="/"
-              class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+      <div className="left-sidebar"></div>
+      <ol class="list-group" style={{ overflow: "auto", height: "500px" }}>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start my-2"
+          style={{ border: "none" }}
+        >
+          <span class="rounded-pill">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 448 512"
             >
-              <span class="fs-5 d-none d-sm-inline">Menu</span>
-            </a>
-            <ul
-              class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
-              id="menu"
-            >
-              <li class="nav-item">
-                <a href="#" class="nav-link align-middle px-0">
-                  <i class="fs-4 bi-house"></i>{" "}
-                  <span class="ms-1 d-none d-sm-inline">Home</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#submenu1"
-                  data-bs-toggle="collapse"
-                  class="nav-link px-0 align-middle"
-                >
-                  <i class="fs-4 bi-speedometer2"></i>{" "}
-                  <span class="ms-1 d-none d-sm-inline">Dashboard</span>{" "}
-                </a>
-                <ul
-                  class="collapse show nav flex-column ms-1"
-                  id="submenu1"
-                  data-bs-parent="#menu"
-                >
-                  <li class="w-100">
-                    <a href="#" class="nav-link px-0">
-                      {" "}
-                      <span class="d-none d-sm-inline">Item</span> 1{" "}
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link px-0">
-                      {" "}
-                      <span class="d-none d-sm-inline">Item</span> 2{" "}
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="nav-link px-0 align-middle">
-                  <i class="fs-4 bi-table"></i>{" "}
-                  <span class="ms-1 d-none d-sm-inline">Orders</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#submenu2"
-                  data-bs-toggle="collapse"
-                  class="nav-link px-0 align-middle "
-                >
-                  <i class="fs-4 bi-bootstrap"></i>{" "}
-                  <span class="ms-1 d-none d-sm-inline">Bootstrap</span>
-                </a>
-                <ul
-                  class="collapse nav flex-column ms-1"
-                  id="submenu2"
-                  data-bs-parent="#menu"
-                >
-                  <li class="w-100">
-                    <a href="#" class="nav-link px-0">
-                      {" "}
-                      <span class="d-none d-sm-inline">Item</span> 1
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link px-0">
-                      {" "}
-                      <span class="d-none d-sm-inline">Item</span> 2
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a
-                  href="#submenu3"
-                  data-bs-toggle="collapse"
-                  class="nav-link px-0 align-middle"
-                >
-                  <i class="fs-4 bi-grid"></i>{" "}
-                  <span class="ms-1 d-none d-sm-inline">Products</span>{" "}
-                </a>
-                <ul
-                  class="collapse nav flex-column ms-1"
-                  id="submenu3"
-                  data-bs-parent="#menu"
-                >
-                  <li class="w-100">
-                    <a href="#" class="nav-link px-0">
-                      {" "}
-                      <span class="d-none d-sm-inline">Product</span> 1
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link px-0">
-                      {" "}
-                      <span class="d-none d-sm-inline">Product</span> 2
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link px-0">
-                      {" "}
-                      <span class="d-none d-sm-inline">Product</span> 3
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link px-0">
-                      {" "}
-                      <span class="d-none d-sm-inline">Product</span> 4
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="nav-link px-0 align-middle">
-                  <i class="fs-4 bi-people"></i>{" "}
-                  <span class="ms-1 d-none d-sm-inline">Customers</span>{" "}
-                </a>
-              </li>
-            </ul>
-            <div class="dropdown pb-4">
-              <a
-                href="#"
-                class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-                id="dropdownUser1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img
-                  src="https://github.com/mdo.png"
-                  alt="hugenerd"
-                  width="30"
-                  height="30"
-                  class="rounded-circle"
-                />
-                <span class="d-none d-sm-inline mx-1">loser</span>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                <li>
-                  <a class="dropdown-item" href="#">
-                    New project...
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Settings
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Profile
-                  </a>
-                </li>
-                <li></li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Sign out
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+            </svg>
+          </span>
+          <div class="ms-2 me-auto">
+            <div class="fw-normal">Aryan Manik</div>
           </div>
-        </div>
-        <div class="col py-3">Content area...</div>
-      </div>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start my-2"
+          style={{ border: "none" }}
+        >
+          <span class="rounded-pill"></span>
+          <div class="ms-2 me-auto">
+            <div class="fw-normal">Friends</div>
+          </div>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start my-2"
+          style={{ border: "none" }}
+        >
+          <span class="rounded-pill">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 448 512"
+            >
+              <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+            </svg>
+          </span>
+          <div class="ms-2 me-auto">
+            <div class="fw-normal">Feeds</div>
+          </div>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start my-2"
+          style={{ border: "none" }}
+        >
+          <span class="rounded-pill"></span>
+          <div class="ms-2 me-auto">
+            <div class="fw-normal">Groups</div>
+          </div>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start my-2"
+          style={{ border: "none" }}
+        >
+          <span class="rounded-pill">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 448 512"
+            >
+              <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+            </svg>
+          </span>
+          <div class="ms-2 me-auto">
+            <div class="fw-normal">Market Place</div>
+          </div>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start my-2"
+          style={{ border: "none" }}
+        >
+          <span class="rounded-pill"></span>
+          <div class="ms-2 me-auto">
+            <div class="fw-normal">Watch</div>
+          </div>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start my-2"
+          style={{ border: "none" }}
+        >
+          <span class="rounded-pill">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 448 512"
+            >
+              <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+            </svg>
+          </span>
+          <div class="ms-2 me-auto">
+            <div class="fw-normal">Add Center</div>
+          </div>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start my-2"
+          style={{ border: "none" }}
+        >
+          <span class="rounded-pill"></span>
+          <div class="ms-2 me-auto">
+            <div class="fw-normal">Add Manager</div>
+          </div>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start my-2"
+          style={{ border: "none" }}
+        >
+          <span class="rounded-pill">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 448 512"
+            >
+              <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+            </svg>
+          </span>
+          <div class="ms-2 me-auto">
+            <div class="fw-normal">Blood Donations</div>
+          </div>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start my-2"
+          style={{ border: "none" }}
+        >
+          <span class="rounded-pill"></span>
+          <div class="ms-2 me-auto">
+            <div class="fw-normal">Climate Science Center</div>
+          </div>
+        </li>
+      </ol>
     </>
   );
 };

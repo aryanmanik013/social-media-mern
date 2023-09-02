@@ -8,15 +8,15 @@ const Homepage = () => {
   return (
     <>
       <Header />
-      <div className="container-fluid">
+      <div className="container-fluid dashboard">
         <div className="row mt-3">
-          <div className="col-md-4">
+          <div className="col-md-3">
             <Left />
           </div>
-          <div className="col-md-4 bg-danger">
+          <div className="col-md-6">
             <Content />
           </div>
-          <div className="col-md-4 bg-success">
+          <div className="col-md-3">
             <Right />
           </div>
         </div>
